@@ -37,13 +37,13 @@ def main(argv: list[str] | None = None) -> int:
     if args.lock_only:
         write_lock()
         return 0
-    # resampy 0.4.2 still imports pkg_resources, removed in newer setuptools.
-    run("install", "--upgrade", "pip", "setuptools>=75,<81", "wheel")
-    run("install", "-e", ".[app,analysis,dev]")
-    # Basic Pitch 0.4.0 declares TensorFlow for Python 3.11. Its Windows ONNX
-    # backend works with the explicitly installed dependencies in `analysis`.
-    run("install", "--no-deps", "basic-pitch==0.4.0")
-    write_lock()
+    # The tested lock includes the full ONNX dependency closure. --no-deps
+    # avoids TensorFlow from Basic Pitch's metadata. setuptools is pinned
+    # because resampy still imports pkg_resources.
+    run("install", "wheel")
+    run("install", "--no-deps", "-r", str(PROJECT / "requirements.lock"))
+    run("install", "--no-deps", "--no-build-isolation", "-e", ".[app,analysis,dev]")
+    # Normal setup must not rewrite the checked-in dependency baseline.
     return 0
 
 

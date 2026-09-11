@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.in text eol=lf
+# These exact bytes are checked by release-assets.json.
+licenses/** -text
+*.ico binary
