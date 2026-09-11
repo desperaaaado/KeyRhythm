@@ -1,0 +1,64 @@
+# Python environments, packaging and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.venv/
+venv/
+env/
+.conda*/
+build/
+dist/
+*.spec.bak
+
+# Local development tools and editor state
+/.keyrhythm-dev/
+/.workspace-deps/
+/.codex/
+/.agents/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Private music library, charts, scores, settings and runtime logs
+/data
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Downloaded third-party runtime assets; keep their README files
+/vendor/ffmpeg/*
+!/vendor/ffmpeg/README.md
+/vendor/fluidsynth/*
+!/vendor/fluidsynth/README.md
+/assets/soundfonts/*
+!/assets/soundfonts/README.md

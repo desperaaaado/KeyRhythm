@@ -1,0 +1,5 @@
+-e .[app,analysis,dev]
+
+# Basic Pitch 0.4.0 declares TensorFlow on Python 3.11 even when ONNX is used.
+# tools/setup_environment.py installs it separately with --no-deps after the
+# complete ONNX dependency set above is installed.

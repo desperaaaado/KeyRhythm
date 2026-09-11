@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "components": {
+    "ffmpeg": {
+      "version": "n8.1.2-44-g7c533d0f86-20260817",
+      "variant": "win64-lgpl static",
+      "source": "https://github.com/BtbN/FFmpeg-Builds",
+      "archive_url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-win64-lgpl-8.1.zip",
+      "archive_sha256": "ADBE8A57945B6FCF4A850D165EE09C553FC66D60C1CE0F204EE767C5D107E17B"
+    },
+    "fluidsynth": {
+      "version": "2.6.0",
+      "variant": "win10-x64-cpp11",
+      "source": "https://github.com/FluidSynth/fluidsynth/releases/tag/v2.6.0",
+      "archive_url": "https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v2.6.0-win10-x64-cpp11.zip",
+      "archive_sha256": "817262DEACAA748EDB3AF6731DFFE1766B00146790BECFCCC949A9F701E76681"
+    },
+    "soundfont": {
+      "name": "GeneralUser GS",
+      "version": "1.471",
+      "source": "https://www.schristiancollins.com/generaluser.php",
+      "archive_url": "https://dl.dropbox.com/s/4x27l49kxcwamp5/GeneralUser_GS_1.471.zip",
+      "archive_sha256": "4203835164766F428C4926C097C9EA58DAE431C7FB8F9DBE277B92D80DA45EC2"
+    }
+  },
+  "files": [
+    {"path": "vendor/ffmpeg/ffmpeg.exe", "sha256": "E8E106D6F6A4166747FBD7374FBF47FFC4D2DD883520C3558FEEAC0281A2712D"},
+    {"path": "vendor/fluidsynth/libfluidsynth-3.dll", "sha256": "635CB6DEC5D92DD90B4D44D4E2C6C81100422D78633BB5FB62A1F62F9A817234"},
+    {"path": "vendor/fluidsynth/sndfile.dll", "sha256": "4E3BD2DE8E1485110EAEBEF8E1239471F73D608773831C323BF528E05645655E"},
+    {"path": "assets/soundfonts/default.sf2", "sha256": "F45B6B4A68B6BF3D792FCBB6D7DE24DC701A0F89C5900A21EF3AAECE993B839A"},
+    {"path": "licenses/Apache-2.0.txt", "sha256": "929C910BAE2152FA87199A5D0660E09263419B7EEE6D4B301D05EE2AAF211C37"},
+    {"path": "licenses/LGPL-2.1.txt", "sha256": "AD01EA5CD2755F6048383C8D54C88459CD6FCB17757C5C8892F8C5EA060F6140"},
+    {"path": "licenses/LGPL-3.0.txt", "sha256": "DA7EABB7BAFDF7D3AE5E9F223AA5BDC1EECE45AC569DC21B3B037520B4464768"},
+    {"path": "licenses/GeneralUser-GS-2.0.txt", "sha256": "028B1E776FA60262DA8124CB57901239F107FC6B369A48ED95159A1E84261942"},
+    {"path": "assets/keyrhythm.ico", "sha256": "219E8ACB1515417DAC97F6760D8A4008BB86D21F379EDFC94C31324FDD5930FC"}
+  ]
+}
